@@ -18,16 +18,23 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/18fb6f1720.js" crossorigin="anonymous"></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
-
 <body>
-  <header><div class="header-logo"><a title="booki.com" href="/"><img class=logo src="img/logo/Booki.png"></img></a></div class=navbar><nav><a href=#accomodations>Accomodations</a><a href=#activities>Activities</a></a></nav><div></div></header>
+  <header><nav class="header"><a title="booki.com" href="/"><img class=logo src="img/logo/Booki.png"></img></a><span class="header-nav"><a class=navl href=#accomodations>Accomodations</a></span><a class=navl href=#activities>Activities</a></nav></header> 
+   <!-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, illum nobis tenetur consequatur delectus veniam magni dolores. Incidunt aperiam, odio ab nisi amet alias esse. Aliquid debitis nihil odit sapiente. -->
+  <div id="vacation" class="va"><p><h4>Find a place for your dream vacation</h4></p><p class="subheading">Downtown or in nature</p></div>
+  <div class="button"><span class="button-icon"><i class="fa-solid fa-location-dot"></i></span><span class=text-input>Marseilles, France</span><span class=button-label>Search</span></div>
+  <div id="filter" class="filters"><span class="filter-label">Filters</span><span id="cost" class="filter-button"><span class="filter-button button-icon"><i class="fa-solid fa-money-bill-1-wave"></i></span><span class="filter-label">Low cost</span></span>&nbsp;&nbsp;&nbsp;<span id="family" class="filter-button"><span class="filter-button button-icon"><i class="fa-solid fa-child"></i></span><span class="filter-label">Family-friendly</span></span>&nbsp;&nbsp;&nbsp;<span id="couple" class="filter-button"><span class="filter-button button-icon"><i class="fa-solid fa-heart"></i></span><span class="filter-label">Romantic</span></span>&nbsp;&nbsp;&nbsp;<span id="pets" class="filter-button"><span class="filter-button button-icon"><i class="fa-solid fa-dog"></i></span><span class="filter-label">Pets allowed</span></span></div>
+  <div id="info" class="infosub subheading"><span class=infoicr><i class="fa-solid fa-info"></i></span><span class="infosub">More than 500 accomodations are available in this city</span></div>
+  <!-- <div id="accomodations"><h4>Accomodations in Marseilles</h4><p>a</p><p>b</p><p>c</p><p>d</p><p>e</p><p>f</p><p>g</p><p>h</p></div>
+  <div id="activities"><h4>Activities in Marseilles</h4><p>a</p><p>b</p><p>c</p></div> -->
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
@@ -35,5 +42,4 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
-
 </html>
