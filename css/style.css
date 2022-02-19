@@ -1,0 +1,93 @@
+body {
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: sans-serif;
+}
+h1 {
+    height: 9px;
+}
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+}
+.navHeader div:first-child {
+    border-top-style: none;
+    justify-content: left;
+}
+.navHeader div {
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding-top: 2em;
+}
+.navHeader a:link {
+    text-decoration: none;
+    color: #000;
+}
+.navHeader a:hover {
+    color:blue;
+}
+.navHeader a:active {
+    color:blue;
+}
+form button{
+    height: 31px;
+}
+form input{
+    height: 25px;
+}
+button:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+button:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: blue;
+    color: white;
+}
+nav button{
+    border-color: gray;
+    border-width: 2px;
+    margin: -3px;
+}
+nav input{
+    border-color: gray;
+    border-width: 2px;
+    margin: -3px;
+}
+.filterBox {
+    display: flex;
+}
+.filters{
+    display: flex;
+    justify-content: left;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 11pt;
+    width: 75%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.filterBox .f1{
+    border-color: lightgray;
+    background-color: lightcyan;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-right: 8px;
+}
+.filterBox {
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    padding-right: 8px;
+}
+.info span {
+    font-size: 8pt;
+    border-radius: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    padding: 1px 5px;
+}
