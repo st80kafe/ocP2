@@ -42,8 +42,6 @@ form input{
     border-style: solid;
     border-color: #F2F2F2;
     border-width: 1pt;
-    font-weight: 600;
-    color: #000;
 }
 form button:first-child {
     border-top-left-radius: 8px;
@@ -51,19 +49,22 @@ form button:first-child {
     border-color:#F2F2F2;
     width: 36px;
     background-color: #F2F2F2;
+    border-bottom-style: solid;
+    margin-right: -4px;
 }
 form button:last-child{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;  
-    border-color:#0065FC;;  
+    border-color:#0065FC; 
     background-color: #0065FC;
     color: white;
-}
-nav button{
-    margin: -4px;
-}
+    margin-right: -4px;
+ }
 nav input{
-    margin: -4px;
+    margin-left: -4px;
+    margin-right: -4px;
+    font-weight: 600;
+    color: #000;
 }
 .filterBox {
     display: flex;
@@ -130,4 +131,123 @@ nav input{
 .footCol a {
     text-decoration: none;
     color: #000;
+}
+.accomTi, .popularTi, .activTi{
+    font-size: 19px;
+    font-weight: 600;
+}
+.accomWrapper {
+    background-color:#F2F2F2;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+}
+.accomWrapper a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.accommodations, .popular{
+    padding: 20px;
+    border: 2px solid #FFF;
+}
+.accomWrapper .accommodations{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+}
+.accomRow1, .accomRow2 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+.accomRow1 div:nth-child(1){
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.accomRow1 div:nth-child(2){
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.accomRow1 div:nth-child(3){
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.accomRow2 div:nth-child(1){
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.accomRow2 div:nth-child(2){
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.accomRow2 div:nth-child(3){
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.accomWrapper .popular{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.popular div:nth-child(2){
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.popular div:nth-child(3){
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.popular div:nth-child(4){
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.activWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 300px;    
+}
+.activWrapper .activCol1 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.activWrapper .activCol2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.activWrapper .activCol3 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.activWrapper .activCol4 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.activCol1, .activCol2, .activCol3, .activCol4 {
+    padding: 20px;
+    border: 2px solid #FCF;
+}
+.activCol1 div{ 
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.activCol2 div:first-child{ 
+    flex-grow: 2;
+    border: 2px solid #FCF;
+}
+.activCol2 div:last-child{ 
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.activCol3 div{ 
+    flex-grow: 1;
+    border: 2px solid #FCF;
+}
+.activCol4 div{ 
+    flex-grow: 1;
+    border: 2px solid #FCF;
 }
