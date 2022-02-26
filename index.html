@@ -4,13 +4,16 @@
 <head>
   <title>Booki, Find the perfect getaway</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/efe82e1412.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <nav class="navHeader">
-    <div><a href="#"><img class="logo" src="img/logo/booki.png" alt="Booki Logo"></a></div>
+    <div class="logo"><a href="#"><img class="logo" src="img/logo/booki.png" alt="Booki Logo"></a></div>
     <div></div>
     <div><a href="#topContent">Accommodations</a></div>
     <div><a href="#middleContent">Activities</a></div>
@@ -44,12 +47,12 @@
     </div>
   </nav>
   <div class="info">
-    <p><span>i</span> More than 500 accommodations are available in this city</p>
+    <p><span><i class="fas fa-info"></i></span>More than 500 accommodations are available in this city</p>
   </div>
-  <main class="topContent">
+  <main>
     <div class="accomWrapper">
       <div class="accommodations">
-      <div class="accomTi">Accommodations in Marseille</div>
+      <div class="accomTi"><h2 id="topContent">Accommodations in Marseille</h2></div>
        <div class="accomRow1">
         <div></div>
         <div></div>
@@ -60,17 +63,18 @@
         <div></div>
         <div></div>
        </div>
-      <div><a href="#">Show more</a></div>
+      <div><h3><a href="#">Show more</a></h3></div>
       </div>
+      <div class="wrap-div"></div>
       <div class="popular">
-      <div class="popularTi">Most Popular</div>
+      <div class="popularTi"><h2>Most Popular</h2></div>
        <div></div>
        <div></div>
        <div></div>
       </div>
     </div>
-   <div class="activTi">Activities in Marseille</div>
-    <div class="activWrapper middleContent">  
+   <div class="activTi"><h2 id="middleContent">Activities in Marseille</h2></div>
+    <div class="activWrapper">
        <div class="activCol1">
         <div></div>
        </div>
@@ -98,7 +102,7 @@
       <div class="footColWrap">
         <div class="footCol footTi">Our Accommodations</div>
         <div class="footCol"><a href="#">Quality Assessment</a></div>
-        <div class="footCol"><a href="#">ou have a hotel?</a></div>
+        <div class="footCol"><a href="#">You have a hotel?</a></div>
       </div>
       <div class="footColWrap">
         <div class="footCol footTi">Assistance</div>
@@ -108,17 +112,6 @@
     </div>
   </footer>
     
-
-
-
-
-
-
-
-
-
-
-  </footer>
 </body>
 
 </html>
