@@ -4,6 +4,7 @@
 node_modules
 dist
 .cache
+tmp.*
 css/style.tmp.css
 css/style.devel.css
 css/style.prd.css

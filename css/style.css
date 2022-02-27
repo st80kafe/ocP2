@@ -177,48 +177,40 @@ nav input {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
+  height: 20%;
+  padding: 8px;
+  margin: 0 -18px;
 }
 .accomRow1 div:nth-child(1) {
   flex-grow: 1;
-  border: 2px solid #fcf;
+  /* border: 3px solid #fff; */
 }
 .accomRow1 div:nth-child(2) {
   flex-grow: 1;
-  border: 2px solid #fcf;
+  /* border: 3px solid #fff; */
 }
 .accomRow1 div:nth-child(3) {
   flex-grow: 1;
-  border: 2px solid #fcf;
+  /* border: 3px solid #fff; */
 }
 .accomRow2 div:nth-child(1) {
   flex-grow: 1;
-  border: 2px solid #fcf;
+  /* border: 3px solid #fff; */
 }
 .accomRow2 div:nth-child(2) {
   flex-grow: 1;
-  border: 2px solid #fcf;
+  /* border: 3px solid #fff; */
 }
 .accomRow2 div:nth-child(3) {
   flex-grow: 1;
-  border: 2px solid #fcf;
+  /* border: 3px solid #fff; */
 }
 .accomWrapper .popular {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
-.popular div:nth-child(2) {
-  flex-grow: 1;
-  border: 2px solid #fcf;
-}
-.popular div:nth-child(3) {
-  flex-grow: 1;
-  border: 2px solid #fcf;
-}
-.popular div:nth-child(4) {
-  flex-grow: 1;
-  border: 2px solid #fcf;
-}
+
 .activWrapper {
   display: flex;
   flex-direction: row;
@@ -270,4 +262,95 @@ nav input {
 .activCol4 div {
   flex-grow: 1;
   border: 2px solid #fcf;
+}
+/* card styles */
+.card {
+  box-shadow: 0 4px 8px 0 #00000033;
+  transition: 0.3s;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  display: flex;
+  background-color: #fff;  
+}
+
+.card div {
+  border-radius: 0 0 15px 15px;
+  object-fit: cover;
+  width: 100%;
+  padding: 0 0 0 0;
+}
+
+.card span {
+  /* flex-wrap: wrap; */
+  font-size: 12px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #00000033;
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card .ic-blue {
+  color: #0065fc;
+}
+
+.card .ic-fade {
+  color: #d0d0d0;
+}
+
+.card-accom {
+  flex-direction: column;
+  margin: 0 10px 0 10px;
+}
+
+.card-accom div {
+  height: 13%;
+}
+
+.card-accom span {
+  padding-left: 5px;
+}
+
+.card-accom img {
+  height: 57%;
+}
+
+.popular{
+  width: 25%;
+}
+
+.popular .card {
+  margin: 8px;
+}
+
+.card-popular img {
+  /* overrides card-accom values with object-fit property */
+  height: 100%;
+  width: 75%;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+}
+
+.card-popular  div {  
+  height: 75%;
+}
+
+.card-popular {
+  height: 22%;
+  font-size: 12px;
+  margin: 0 10px 0 10px;
+}
+
+.card-popular .inner-row {
+  margin-right: -22px;
+  height: 100%;
+}
+
+.card-popular .inner-col {
+  height: 45%;
 }
