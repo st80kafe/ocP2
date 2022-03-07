@@ -13,24 +13,41 @@ h3 {
 }
 .navHeader {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
+  align-items:flex-start;
 }
 .navHeader div {
-  padding-top: 37px;
+  padding-top: 53px;
+}
+.navHeader div:nth-child(2){
+  margin: 0 48px 0 0;
 }
 .navHeader a:link {
   text-decoration: none;
   color: #000;
 }
-.navHeader a:hover {
-  padding-top: 37px;
+.navHeader img {
+  width: auto;
+  height: 56px;
+}
+div.header {
+  padding: 0 10px 37px 10px;
+}
+div.header:hover {
+  padding: 0 10px 36px 10px;
   border-top-style: solid;
   border-top-width: 1px;
   color: #0065fc;
 }
+
+div.logo {
+  margin: 0 55% 0 0;
+}
 div.logo a:hover {
   border-style:none;
+  padding: 37px 0 0 0;
 }
+
 form button {
   height: 32px;
 }
@@ -111,7 +128,7 @@ nav input {
   margin-right: 7px;
 }
 .info p {
-  font-size: 9pt; 
+  font-size: 9pt;
 }
 
 .footer {
@@ -302,7 +319,12 @@ nav input {
   margin: 0 10px 0 10px;
   width: 33%;
 }
-
+.card-accom .card-info {
+  padding: 0 0 3px 10px;
+}
+.card-info h3 {
+  margin: 0 0 -2% 0;
+}
 
 /* hotel stars */
 .card .ic-blue {
@@ -370,4 +392,79 @@ nav input {
 
 .card-activ h3 {
   margin: 7px 0 0 7px;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 0 0  ;
+  }
+  .navHeader { 
+    flex-direction: inherit;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: fit-content;
+    max-height: 180px;
+    justify-content: center;
+  }
+  .navHeader .logo {
+    justify-content: center;
+    margin: 0 10% 8%;
+  }
+  
+  div.header{ 
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 33%;
+    padding: 0  5% 7px 5%;
+    border-style: none;
+    border-top-style: none;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #f2f2f2;
+  }
+  div.header:nth-child(2) {
+    margin: 0 8px  0 28px;
+  }
+  div.header:hover {
+    padding: 0 5% 7px 5%;
+    border-top-style: none;
+    border-top-width: 0px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-color: #0065fc;
+  }
+ 
+  header.headerText{
+    padding: 0 5% 0;
+  }
+  .section-1 {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5% 0;
+  }
+  .section-1 .filters {
+    flex-wrap: wrap;
+    height: 180px;
+  }
+  .section-1 .filterText {
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 70% 5% 0;
+  }
+  .section-1 .filterBox {
+    margin-top: 12px;
+  }
+  .section-1 h1 {
+     justify-content: center;
+  }
+  .section-2 {
+    flex-direction: column;
+  }
+  .section-3 {
+    flex-direction: column;
+  }
+  .footWrapper {
+    flex-direction: column;
+  }
+  }
 }
