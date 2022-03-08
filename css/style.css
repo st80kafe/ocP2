@@ -31,10 +31,10 @@ h3 {
   height: 56px;
 }
 div.header {
-  padding: 0 10px 37px 10px;
+  padding:  37px 10px 0 10px;
 }
 div.header:hover {
-  padding: 0 10px 36px 10px;
+  padding: 36px 10px 0 10px;
   border-top-style: solid;
   border-top-width: 1px;
   color: #0065fc;
@@ -256,7 +256,7 @@ nav input {
 .activCol3 {
   padding: 0 22px 0 0;
 } 
- /*
+
 /* column2 of activWrapper */
 .activCol2 {
   height: 80%;
@@ -304,7 +304,7 @@ nav input {
 
 .card h3 {
   font-size: 11px;
-  margin: 0 0 0 0;
+  margin: 0 0 ;
 }
 
 .card:hover {
@@ -398,6 +398,9 @@ nav input {
   body {
     margin: 0 0  ;
   }
+  h1, h2 {
+    font-size: 18px;
+  }
   .navHeader { 
     flex-direction: inherit;
     align-items: center;
@@ -407,14 +410,20 @@ nav input {
     justify-content: center;
   }
   .navHeader .logo {
+    flex-grow: 2;
     justify-content: center;
-    margin: 0 10% 8%;
+    margin: 0 10% 8% 25%;
+  }
+  .navHeader .header {
+    flex-grow: 1;
   }
   
-  div.header{ 
+  div.header { 
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 33%;
+    /* text right of logo displays vertically above width 34% */
+    width: 34%;
+    /* watch levels of navHeader text on hover */
     padding: 0  5% 7px 5%;
     border-style: none;
     border-top-style: none;
@@ -422,6 +431,7 @@ nav input {
     border-bottom-width: 3px;
     border-bottom-color: #f2f2f2;
   }
+  /* center navHeader text and bottom-border */
   div.header:nth-child(2) {
     margin: 0 8px  0 28px;
   }
@@ -433,38 +443,231 @@ nav input {
     border-bottom-width: 3px;
     border-color: #0065fc;
   }
- 
+  .navHeader a:hover {
+    text-decoration: none;
+    color: #0065fc;
+  }
   header.headerText{
-    padding: 0 5% 0;
+    padding: 10% 0 5% 5%;
   }
   .section-1 {
     flex-direction: column;
     justify-content: center;
-    padding: 0 5% 0;
+    padding: 0 4% 2% 4%;
+  }
+  /* taller search and filters button for mobile */
+  form button {
+    height: 43px;
+  }
+  form input {
+    height: 37px;
+    border-width: 2pt;
+  }
+  form button:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin-right: -5px;
+    border-width: 4pt;
+  }
+  form button:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-right: -8px;
+  }
+  nav input {
+    margin-left: -5px;
+    margin-right: -5px;
   }
   .section-1 .filters {
     flex-wrap: wrap;
-    height: 180px;
+    height: 210px;
+    width: 92%;
+    font-size: 10pt;
+    margin-bottom: 15px;
   }
   .section-1 .filterText {
     font-weight: 700;
     font-size: 14px;
-    margin: 0 70% 5% 0;
+    /* four buttons in three rows */
+    margin: 4% 70% 0 0;
   }
   .section-1 .filterBox {
     margin-top: 12px;
   }
-  .section-1 h1 {
-     justify-content: center;
+  .filterBox .f1 {
+    border-radius: 46px;
+    height: 46px;
+    width: 46px;
+    background-color: #deebff;
   }
+  .f1 i {
+    padding: 17px;
+    color: #0065fc;
+  }
+  .f1 + div {
+    padding: 12px;
+  }
+  
   .section-2 {
     flex-direction: column;
   }
   .section-3 {
     flex-direction: column;
   }
+  .section-3 h3 {
+    margin: 0 0 0 0;
+    justify-content: right;
+  }
+
+  .footer {
+    width: 100%;
+    margin: 5% 0 1% 0;
+    padding: 5% 0 1% 0;
+  }
   .footWrapper {
     flex-direction: column;
   }
+  .footColWrap {
+    margin: 0 0 15%;
   }
+  .accomWrapper {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;                              
+  }
+  .accomWrapper .accommodations {
+    height: auto;
+    width: 100%;  
+  }
+  .accommodations {                 
+    max-height: 1500px;
+    background-color: #fff;
+  }
+  .accomTi,
+  .popularTi,
+  .activTi {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 4%;
+  }
+  .accomRow1,
+  .accomRow2 {
+    flex-direction: column;
+    flex-grow: 0;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height:auto;
+    max-width: 92%;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .card-accom {
+    /* column width 60% of container      */
+    width: 92%;
+    flex-grow: 1;  
+    height: auto;           
+    margin: 10px 0 10px 0;
+  }
+    
+  .card-accom img { 
+    height: 100px;
+    width: 100%;             
+   }
+   .card-accom h3 {
+     margin: 0 0 3px;
+   }
+  
+  .card-popular img { 
+    max-height: 100px;
+  }
+
+  .popular {
+    width: 92%;
+    max-height: 525px;
+    border-radius: 0px;
+    padding: 0 4% 8% 4%;
+  }
+
+  .card-activ {
+    flex-grow: 1;
+    max-width: 92%;
+    height: 15%;
+  }
+  .card-activ h3 {
+    margin: 17px 0 0 17px;
+    font-size: 15px;
+  }
+  .card-activ img {
+    margin: 0 0 0 0;
+  }
+  .activTi {
+    margin-left: 6%;
+  }
+  .activWrapper {
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    align-items: flex-end;
+    max-width: fit-content;
+    margin: 0 0 0 -2%;
+    height: 1630px;
+  }
+  .activCol1,
+  .activCol2,
+  .activCol3,
+  .activCol4 { 
+    justify-content:flex-end;
+    width: 92%;
+    padding: 0 0;
+    flex-grow: 0;
+    height: auto;
+  }
+  .activCol1  {
+    height: auto;
+    margin: 0 0 -57% 0 ;
+  } 
+  .activCol1 img {
+    height: 71%;
+  } 
+  .activCol2 {
+    height: auto;
+    margin: -30% 0 0 0;
+  }
+  .activCol3 {
+    height: auto;
+    margin: 25px 0 0 0 ;
+  }
+  .activCol4 {
+    height: auto;
+    margin: 25px 0 0 0 ;
+  }
+  .stretch-activCol2 {
+    max-height: 26%;
+  }
+  .activCol2 .card-activ:nth-child(1) {
+    flex-grow: 0; 
+    height: auto;
+    margin: 0 0 13px 0;
+  }
+  .activCol2 .card-activ:nth-child(2) {
+    flex-grow: 0;
+    height: 25%;
+    margin: 12px 0 0 0;
+  }
+  .activCol2 img {
+    height: 64%;
+  }
+  .stretch-activCol2  img {
+    height: 30%;
+  }
+  .activCol3 img {
+    height: 71%;
+  }
+  .activCol3 {
+    height: auto;
+  }
+  .shrink-activCol4 {
+    max-height: 46%;
+  }
+ 
 }
