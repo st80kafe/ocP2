@@ -33,15 +33,17 @@ h3 {
 div.header {
   padding:  37px 10px 0 10px;
 }
+a + span {
+  padding: 0 15px;
+}
 div.header:hover {
   padding: 36px 10px 0 10px;
   border-top-style: solid;
   border-top-width: 1px;
   color: #0065fc;
 }
-
 div.logo {
-  margin: 0 55% 0 0;
+  margin: 0 60% 0 0;
 }
 div.logo a:hover {
   border-style:none;
@@ -80,9 +82,7 @@ nav input {
   font-weight: 600;
   color: #000;
 }
-.filterBox {
-  display: flex;
-}
+
 .filters {
   display: flex;
   justify-content: space-between;
@@ -111,6 +111,7 @@ nav input {
   padding-top: 10px;
 }
 .filterBox {
+  display: flex;
   border-style: solid;
   border-radius: 33px;
   border-width: 1px;
@@ -125,7 +126,7 @@ nav input {
   border-color: #e1e1e1;
   color: #0065fc;
   padding: 1px 7px;
-  margin-right: 7px;
+  margin: 0 7px 0 0;
 }
 .info p {
   font-size: 9pt;
@@ -315,7 +316,7 @@ nav input {
   font-size: 11px;
   flex-direction: column;
   flex-grow: 1;
-  padding: 0 0 0 0;
+  padding: 0;
   margin: 0 10px 0 10px;
   width: 33%;
 }
@@ -354,7 +355,7 @@ nav input {
   border-radius: 0 0 15px 15px;
   object-fit: cover;
   width: 100%;
-  padding: 0 0 0 0;
+  padding: 0;
   font-size: 11px;
 }
 .popular{
@@ -412,43 +413,44 @@ nav input {
   .navHeader .logo {
     flex-grow: 2;
     justify-content: center;
-    margin: 0 10% 8% 25%;
+    margin: 0 24% 8% 24%;
   }
   .navHeader .header {
     flex-grow: 1;
   }
-  
+  a + span {
+    padding: 0  0px;
+  }
   div.header { 
     flex-direction: column;
     flex-wrap: nowrap;
-    /* text right of logo displays vertically above width 34% */
-    width: 34%;
-    /* watch levels of navHeader text on hover */
-    padding: 0  5% 7px 5%;
-    border-style: none;
+    padding:  0 0px 7px 0px ;
     border-top-style: none;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: #f2f2f2;
   }
-  /* center navHeader text and bottom-border */
-  div.header:nth-child(2) {
-    margin: 0 8px  0 28px;
+  .top > .header {
+    margin: 0 2px 0 2px;
+    padding: 0 21px  7px 25px;
+    border-bottom: 3px solid #f2f2f2;
   }
-  div.header:hover {
-    padding: 0 5% 7px 5%;
+  .middle > .header {
+    margin: 0 2px 0 2px;
+    padding: 0 44px 7px 44px;    
+    border-bottom: 3px solid #f2f2f2;
+  }
+  .top > .header:hover {
+    padding: 0 21px 7px 25px;
     border-top-style: none;
     border-top-width: 0px;
-    border-bottom-style: solid;
-    border-bottom-width: 3px;
-    border-color: #0065fc;
+    border-bottom: 3px solid #0065fc;
   }
-  .navHeader a:hover {
-    text-decoration: none;
-    color: #0065fc;
+  .middle > .header:hover {
+    padding: 0 44px 7px 44px;
+    border-top-style: none;
+    border-top-width: 0px;
+    border-bottom: 3px solid #0065fc;
   }
   header.headerText{
-    padding: 10% 0 5% 5%;
+    padding: 10% 0 5% 2%;
   }
   .section-1 {
     flex-direction: column;
@@ -457,7 +459,7 @@ nav input {
   }
   /* taller search and filters button for mobile */
   form button {
-    height: 43px;
+    height: 41px;
   }
   form input {
     height: 37px;
@@ -466,17 +468,14 @@ nav input {
   form button:first-child {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    margin-right: -5px;
+    margin-right: -8px;
     border-width: 4pt;
+    height: 43px;
   }
   form button:last-child {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     margin-right: -8px;
-  }
-  nav input {
-    margin-left: -5px;
-    margin-right: -5px;
   }
   .section-1 .filters {
     flex-wrap: wrap;
@@ -515,7 +514,7 @@ nav input {
     flex-direction: column;
   }
   .section-3 h3 {
-    margin: 0 0 0 0;
+    margin: 0;
     justify-content: right;
   }
 
@@ -598,7 +597,7 @@ nav input {
     font-size: 15px;
   }
   .card-activ img {
-    margin: 0 0 0 0;
+    margin: 0;
   }
   .activTi {
     margin-left: 6%;
