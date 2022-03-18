@@ -430,12 +430,12 @@ div.popularTi i {
 .card-popular img {
   /* overrides card's object-fit property */
   height: 100%;
-  width: 100%;
+  width: 80%;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 15px;
 }
 .card-popular .inner-row {
-  margin-right: -82px;
+  margin-right: -142px;
 }
 .card-popular .inner-col {
   display: flex;
@@ -450,6 +450,7 @@ div.popularTi i {
 /* cards in 'Activities' block */
 .card-activ {
   flex-direction: column;
+  justify-content: flex-start;
 } 
 
 .card-activ h3 {
