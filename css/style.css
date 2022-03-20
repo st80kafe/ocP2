@@ -48,17 +48,17 @@ div.header {
   padding:  37px 10px 0 10px;
 }
 form button {
-  height: 32px;
+  height: 42px;
 }
 .searchForm input {
-  height: 28px;
+  height: 38px;
   border-style: solid;
   border-color: #f2f2f2;
   border-width: 1pt;
 }
 .searchForm button:first-child {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   border-color: #f2f2f2;
   width: 36px;
   background-color: #f2f2f2;
@@ -66,8 +66,8 @@ form button {
   margin-right: -2px;
 }
 .searchForm button:last-child {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   border-style: none;
   background-color: #0065fc;
   color: white;
@@ -95,13 +95,15 @@ nav input {
 
 .filterBox .f1 {
   border-radius: 33px;
-  height: 35px;
-  width: 35px;
+  height: 39px;
+  width: 39px;
   background-color: #deebff;
 }
-
+.filterBox .f2 {
+  margin: 12px 5px;
+}
 .f1 i {
-  padding: 10px;
+  padding: 14px;
   color: #0065fc;
 }
 .f1 + div {
@@ -109,7 +111,7 @@ nav input {
 }
 .filterText {
   padding: 0 0 5px;
-  margin: 0 15px 0 0;
+  margin: 2px 15px 0 0;
 }
 .filterBox {
   display: flex;
@@ -140,12 +142,12 @@ span.browse {
   margin: 0 -5px 0 5px;
 }
 .info span {
-  border-radius: 11px;
+  border-radius: 12px;
   border-width: 1px; 
   border-style: solid;
   border-color: #e1e1e1;
   color: #0065fc;
-  padding: 1px 7px;
+  padding: 2px 7px;
   margin: 0 7px 0 0;
 }
 .info p {
@@ -173,28 +175,26 @@ span.browse {
   margin: 0 90px 0 25px;
   padding: 5px;
 }
+
 .accomTi,
 .popularTi,
 .activTi {
   font-size: 19px;
   font-weight: 600;
   padding-top: 12px;
+  width: 100%;
 }
-.accomTi {
-  margin: 0 15px;
-}
-h3.show-more {
-  margin: -1px 0 0 15px
-}
-div.popularTi span {
+
+div.popularTi div {
   display: inline-flex;
 }
 div.popularTi i {
   margin-top: 24px;
 }
 .popularTi h2 {
-  margin-right: 41px;
+  margin: 20px 62px 18px 0px;
 }
+
 .accomWrapper {
   display: flex;
   flex-direction: row;
@@ -221,40 +221,48 @@ div.popularTi i {
 .accommodations{
   padding-bottom: 12px;
 }
+
 .wrap-div {
   width: 22px;
   background-color: #fff;
 }
 .accomWrapper .accommodations {
+  width: 60%;
+  flex-grow: 3;
   display: flex;
   justify-content:center;
-  align-items: stretch;
   flex-direction: column;
-  flex-grow: 3;
-  width: 60%;
 }
+.accomWrapper .popular{
+  width: 25%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .accomRow1,
 .accomRow2 {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
   flex-grow: 1;
-  height: auto;
+  height: 20%;
   padding: 8px;
+  margin: 0 -18px;
 }
 
-/* height of accomRow2 img elements */
+/* height of accomRow1/2 img elements */
+.accomRow1 img {
+  max-height: 100px;
+}
 .accomRow2 img {
   max-height: 100px;
 }
+/* middle card accomRow2 */
 .accomRow2 div:nth-child(2) img {
   height: 100px;
-}
-
-.accomWrapper .popular {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  /* border: 3px solid #fcf; */
 }
 
 .activWrapper {
@@ -315,7 +323,7 @@ div.popularTi i {
   height: 80%;
 }
 .stretch-activCol2  img {
-  height: 48%;
+  height: 46%;
 }
 .activCol2 .card-activ:nth-child(1) {
   flex-grow: 2; 
@@ -387,22 +395,16 @@ div.popularTi i {
   width: 33%;
 }
 
-.card-accom img {
-  height: 60%;
-}
-
 .card-accom .card-info {
   padding: 0 0 3px 10px;
-  height: 80%;
 }
 .card-info h3 {
-  margin: 5px 0 7px 0;
-  padding: 0 0 1px 0;
+  margin: 0 0 -5px 0;
 }
-/* .card-info p {
-  margin: 5px 0 -7px 0;
-  padding: 0 0 1px 0;
-} */
+.card-info p {
+  margin: 8px 0 5px ;
+}
+
 
 /* hotel stars */
 .card .ic-blue {
@@ -413,34 +415,34 @@ div.popularTi i {
 }
 
 /* cards in 'Most Popular' block */
-
-.popular{
-  width: 25%;
-  flex-grow: 1;
-}
-.popular .card {
-  margin: 8px;
-}
 .card-popular {
+  display: flex;
   flex-direction: row;
   height: 22%;
   font-size: 11px;
 }
-.card-popular img {
-  /* overrides card's object-fit property */
-  height: 100%;
-  width: 80%;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 15px;
+.card-popular a {
+  max-width: 99%;
+  display: block;
 }
-.card-popular .inner-row {
-  margin-right: -142px;
+.card-popular img {
+  height: 100%;
+  width: 40%;
+  border-radius: 15px 0 0 15px;
+  margin-bottom: -91px;
 }
 .card-popular .inner-col {
-  display: flex;
+  height: 100%;
+  width: 60%;
+  margin-left: 41%;
+  display:flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: flex-start;
+  flex-wrap: wrap;
+} 
+.inner-col div {
+  margin-top: 10px;
 }
 .inner-col div:nth-child(2){
   font-size: 8pt;
@@ -460,9 +462,6 @@ div.popularTi i {
   .booki {
     margin:0 20%;
   }
-  .card-info h3 {
-    margin: 0 0 -10% 0;
-  }
 }
 
 @media (max-width: 1359px) {
@@ -473,30 +472,19 @@ div.popularTi i {
   .navHeader {
     width: auto; 
   } 
-  .filters {
-    height:auto;
-    flex-wrap: wrap;
-  }
-  .card-info h3 {
-    margin: 0 6px -8px 0px;
+  .popularTi h2 {
+    margin-right: 31px;
   }
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 1055px) {
   /* tablets */
   .booki {
     margin:0 5%;
   }
-  .filters {
-    height:auto;
-    flex-wrap: wrap;
-  }
-  .filterBox {
-    margin: 5px;
-  }
-  .card-info h3 {
-    margin: 0 6px -6% 0;
+  .popularTi h2 {
+    margin-right: 21px;
   }
   div.logo {
     margin: 0 50% 0 0;
@@ -505,9 +493,6 @@ div.popularTi i {
 @media (max-width: 875px) {
   .booki {
     margin: 0 2%;
-  }
-  .card-popular .inner-row {
-    margin-right: -52px;
   }
   div.logo {
     margin: 0 30% 0 0;
@@ -543,20 +528,15 @@ div.popularTi i {
     padding: 0  0px;
   }
   div.header { 
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding:  0 0px 7px 0px ;
-    border-top-style: none;
+    max-width: 92%;
+    border-bottom: 3px solid #f2f2f2;
+    margin: 0 2px 0 2px;
   }
   .top > .header {
-    margin: 0 2px 0 2px;
     padding: 0 21px  7px 25px;
-    border-bottom: 3px solid #f2f2f2;
   }
   .middle > .header {
-    margin: 0 2px 0 2px;
     padding: 0 44px 7px 44px;    
-    border-bottom: 3px solid #f2f2f2;
   }
   .top > .header:hover {
     padding: 0 21px 7px 25px;
@@ -579,7 +559,6 @@ div.popularTi i {
     align-items: center;
     padding: 0 4% 2% 4%;
   }
-  /* taller search and filters button for mobile */
   .searchForm button {
     height: 41px;
   }
@@ -617,7 +596,6 @@ div.popularTi i {
   .section-1 .filterText {
     font-weight: 700;
     font-size: 14px;
-    /* four buttons in three rows */
     margin: 4% 100% 0 0;
   }
   .section-1 .filterBox {
@@ -633,8 +611,8 @@ div.popularTi i {
     padding: 17px;
     color: #0065fc;
   }
-  .f1 + div {
-    padding: 15px;
+  .filterBox .f2 {
+    margin: 16px 5px;
   }
   
   .section-2 {
@@ -649,7 +627,6 @@ div.popularTi i {
     padding: 5% 0 1% 0;
   }
   .footWrapper {
-    /* wrap footer */
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -665,6 +642,10 @@ div.popularTi i {
     height: auto;
     width: 100%;  
   }
+  .accomWrapper .popular {
+    height: 500px;
+    width: 100%;  
+  }
   .accommodations {                 
     max-height: 1500px;
     background-color: #fff;
@@ -675,12 +656,7 @@ div.popularTi i {
     font-size: 16px;
     font-weight: 600;
   }
-  div.popularTi i {
-    margin-top: 19px;
-  }
-  .popularTi h2 {
-    margin-right: 161px;
-  }
+  
   .accomRow1,
   .accomRow2 {
     flex-direction: column;
@@ -693,7 +669,6 @@ div.popularTi i {
     padding: 0 0;
   }
   .card-accom {
-    /* column width 60% of container */
     width: 92%;
     flex-grow: 1;  
     height: auto;           
@@ -709,21 +684,29 @@ div.popularTi i {
    }
   
   .card-popular img { 
-    max-height: 100px;
+    max-height: 150px;
   }
-
-  .card-popular .inner-row {
-    margin-right: -82px;
-  }
-  
   .popular {
     width: 92%;
-    max-height: 525px;
+    height: 525px;
     border-radius: 0px;
     padding: 0 4% 8% 4%;
+  } 
+  .popular .card {
+    margin: 8px;
+  }
+  .card-popular {
+    width: 92%;
+    flex-grow: 1;
+  }
+  .popularTi h2 {
+    margin: 20px 410px 18px 12px ;
   }
   .popularTi {
-    margin-left: 4%;
+    margin: 0 0 0 0;
+  }
+  div.popularTi i {
+    margin-top: 19px;
   }
 
   .card-activ {
@@ -838,6 +821,9 @@ div.popularTi i {
   .activWrapper {
   height: 2230px;
   }
+  .popularTi h2 {
+    margin: 20px 310px 18px 12px ;
+  }
 }
 @media (max-width: 506px) {
   .activWrapper {
@@ -859,6 +845,9 @@ div.popularTi i {
   /* Samsung Galaxy A51/71  iPhone XR */
   .activWrapper {
   height: 1730px;
+  }
+  .popularTi h2 {
+    margin: 20px 210px 18px 12px ;
   }
 }
 @media (max-width: 395px) {
@@ -888,10 +877,20 @@ div.popularTi i {
 }
 @media (max-width: 285px) {
   /* Galaxy Fold*/
+  div.header {
+    margin-top: 2px;
+  }
   .activWrapper {
     height: 1290px;
   }
   .section-1 .filters {
     height: 270px;
   }
+  .searchForm button:last-child {
+    margin: 0 -15px;
+  }
+  .popularTi h2 {
+    margin: 20px 410px 18px 12px ;
+  }
+  
 }
