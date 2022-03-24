@@ -126,8 +126,8 @@ nav input {
   font-weight: 700;
 }
 .filterBox:hover .f1 {
-  border-width: 1px;
-  border-style: solid;
+  border-width: 2px;
+  border-style:double;
   border-color: #0065fc;
 }
 .filterBox:hover  {
