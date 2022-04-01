@@ -489,6 +489,9 @@ div.popularTi i {
   div.logo {
     margin: 0 50% 0 0;
   }
+  .card-accom h3 {
+    margin-right: 8px;
+  }
 }
 @media (max-width: 875px) {
   .booki {
@@ -690,13 +693,13 @@ div.popularTi i {
     width: 92%;
     height: 525px;
     border-radius: 0px;
-    padding: 0 4% 8% 4%;
+    padding: 0 10% 8% 5%;
   } 
   .popular .card {
     margin: 8px;
   }
   .card-popular {
-    width: 92%;
+    max-width: 85%;
     flex-grow: 1;
   }
   .popularTi h2 {
